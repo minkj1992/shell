@@ -16,3 +16,9 @@ $ CLUSTER_NAME=$(kubectl config current-context | sed -e 's/-context$//')
 $ wget -O $BASEDIR/kocoon-hermes/values.yaml https://github.daumkakao.com/raw/~~~
 $ grep -rl "changeme" $BASEDIR/kocoon-hermes | xargs sed -i '' 's/changeme/'"$CLUSTER_NAME"'/g'
 ```
+
+## find by file name (recursive)
+
+```bash
+$ find . -name '*.java'
+```
